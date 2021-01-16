@@ -27,7 +27,7 @@ run the tests to check it is set up correctly
 
 Format to run script - 
 
-python openTargetsEMBL.py [-t/-d/--help] [searchTerm]
+```python openTargetsEMBL.py [-t/-d/--help] [searchTerm] ```
 
 -t     Target association search <br />
 -d     Disease association search <br />
