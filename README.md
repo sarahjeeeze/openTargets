@@ -44,6 +44,8 @@ If input is incorrect you should receive an error message eg.
 ```Disease not found in database, please check input and try again``` <br />
 ```Incorrect entry must define -t for target or -d for disease```
 
+See sampleOutput folder for example of expected output for Kuru disease
+
 
 
 ## Reference
