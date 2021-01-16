@@ -1,9 +1,9 @@
 ## Open Targets 
 
-This programme is to retrieve potential drug targets (protein, protein complex or RNA molecules)
-and their correspondinng association scores, and a min/max/average and standard deviation of all associations to a drug or target are returned.
+This programme is to retrieve potential drug targets (protein, protein complex or RNA molecules) with their correspondinng association scores.
+The Minimum, Maximum, Average and standard deviation of all associations are also returned.
 
-
+## Set up
 
 Assumes you have python 3 installed - https://www.python.org/downloads/
 
