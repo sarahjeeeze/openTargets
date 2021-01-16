@@ -5,9 +5,7 @@ and their correspondinng association scores, and a min/max/average and standard 
 
 
 
-
-Assumes you have python 3 installed - [https://www.python.org/downloads/]
-
+Assumes you have python 3 installed - https://www.python.org/downloads/
 
 From CMD line - 
 
@@ -27,9 +25,6 @@ run the tests to check it is set up correctly
 
 Main programme 
 
-
-Format to run search for disease of target - 
-
 python openTargetsEMBL.py [-t/-d] [searchTerm]
 
 -t     Target association search,
@@ -38,15 +33,23 @@ python openTargetsEMBL.py [-t/-d] [searchTerm]
 
 Examples - 
 
-```python openTargetsEMBL.py -d alpers```
-```python openTargetsEMBL.py -t ENSG00000264781```
-```python openTargetsEMBL.py --help```
+```python openTargetsEMBL.py -d alpers``` <br />
+```python openTargetsEMBL.py -t ENSG00000264781``` <br />
+```python openTargetsEMBL.py --help``` <br />
 
 If input is incorrect you should receive an error message eg.
 
-```Disease not found in database, please check input and try again```
+```Disease not found in database, please check input and try again``` <br />
 ```Incorrect entry must define -t for target or -d for disease```
 
+
+
+## Reference
+
+Denise Carvalho-Silva, Andrea Pierleoni, Miguel Pignatelli, ChuangKee Ong, Luca Fumis, Nikiforos Karamanis, 
+Miguel Carmona, Adam Faulconbridge, Andrew Hercules, Elaine McAuley, Alfredo Miranda, Gareth Peat, Michaela Spitzer,
+Jeffrey Barrett, David G Hulcoop, Eliseo Papa, Gautier Koscielny, Ian Dunham, Open Targets Platform: new developments 
+and updates two years on, Nucleic Acids Research, Volume 47, Issue D1, 08 January 2019, Pages D1056–D1065, https://doi.org/10.1093/nar/gky1133
 
 
 
