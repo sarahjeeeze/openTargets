@@ -1,13 +1,5 @@
----
-title: "openTargets"
-output: html_document
----
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## R Markdown
+Assumes you have python installled
 
 https://www.python.org/downloads/
 
