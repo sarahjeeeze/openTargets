@@ -29,8 +29,8 @@ Format to run script -
 
 python openTargetsEMBL.py [-t/-d/--help] [searchTerm]
 
--t     Target association search,
--d     Disease association search,
+-t     Target association search <br />
+-d     Disease association search <br />
 --help Returns doc string
 
 Examples - 
