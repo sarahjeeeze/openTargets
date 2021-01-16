@@ -23,9 +23,11 @@ run the tests to check it is set up correctly
 
 ```python tests.py```
 
-Main programme 
+## Main programme 
 
-python openTargetsEMBL.py [-t/-d] [searchTerm]
+Format to run script - 
+
+python openTargetsEMBL.py [-t/-d/--help] [searchTerm]
 
 -t     Target association search,
 -d     Disease association search,
