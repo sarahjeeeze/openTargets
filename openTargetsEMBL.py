@@ -47,9 +47,7 @@ def targetRetrieve(x):
     OUTPUT: all associated target ID's and their overall association scores, Max, Min, Average and Standard deviation returned as a dictionary"""
     target = str(x)
     a_for_target = ot.get_associations_for_target(target)
-
     allscores = []
-    
     for a in a_for_target:
          
         score = a['association_score']['overall']
@@ -72,7 +70,7 @@ def diseaseRetrieve(x):
     for a in a_for_target:
         
         score = a['association_score']['overall']
-        print(a['id'], a['association_score']['overall'],a['disease']['id'])
+        print(a['id'], a['association_score']['overall'])
         allscores.append(score)
    
     stats = {'maximum': str(max(allscores)),
@@ -96,26 +94,31 @@ if __name__ == "__main__":
     elif (sys.argv[1]) == '-t':
         searchTerm = str(sys.argv[2])
         try:
-            
+            #targetRetrieve(searchTerm)
+            ot.get_associations_for_target(searchTerm)
             a = targetRetrieve(searchTerm)
             for k,v in a.items():
-                print(k,':',v)
+               print(k,':',v)
         except ValueError as err: 
+            print('Target not found in database, please check input and try again')
+        except StopIteration as err:
             print('Target not found in database, please check input and try again')
             
         
     elif (sys.argv[1]) == '-d':
         searchTerm = str(sys.argv[2])
         try:
-            
+            diseaseRetrieve(searchTerm)
             a = diseaseRetrieve(searchTerm)
             for k,v in a.items():
                 print(k,':',v)
             
         except ValueError as err: 
             print('Disease not found in database, please check input and try again')
+        except StopIteration as err:
+            print('Disease not found in database, please check input and try again')
     else:
-        print('Incorrect entry must define -t for target associations or -d for disease associations \n example: python embl.py -t ENSG00000197386')
+        print('Incorrect entry must define -t for target or -d for disease  \n example: python embl.py -t ENSG00000197386')
 
 
 
