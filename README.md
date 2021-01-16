@@ -19,7 +19,7 @@ How to run the code
 
 run tests 
 
-```python embltest.py```
+```python tests.py```
 
 Usage:
 
@@ -31,8 +31,8 @@ python openTargetsEMBL.py [-t/-d] [searchTerm]
 
 Examples - 
 
-```python embl.py -d alpers```
-```python embl.py -t ENSG00000264781```
+```python openTargetsEMBL.py -d alpers```
+```python openTargetsEMBL.py -t ENSG00000264781```
 
 
 Trouble shooting.
