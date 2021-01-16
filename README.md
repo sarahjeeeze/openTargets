@@ -1,7 +1,7 @@
 ## Open Targets 
 
 This programme is to retrieve potential drug targets (protein, protein complex or RNA molecules)
-and their correspondinng association scores, and a min/max/average and standard deviation of all associations to a drug or target are returned.
+and their correspondinng association scores, and a min/max/average and standard deviation of all associations to a drug or target are also returned.
 
 
 
